@@ -1,10 +1,3 @@
-<!--CREATE TABLE laulud(
-//    id int PRIMARY KEY AUTO_INCREMENT,
-//    laulunimi varchar(50),
-//    lisamisaeg datetime,
-//    punktid int DEFAULT 0,
-//    kommentarid text Default 0,
-avalik int Default 1)-->
 <?php
 require_once ('conf.php');
 global $yhendus;
