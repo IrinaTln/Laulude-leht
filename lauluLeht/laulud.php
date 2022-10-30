@@ -23,16 +23,12 @@ if(isset($_REQUEST['haal'])) {
     $kask = $yhendus->prepare("UPDATE laulud SET punktid=punktid+1 WHERE id=?");
     $kask->bind_param('s', $_REQUEST['haal']);
     $kask->execute();
-//очистка адресной строки после перезагрузки
-    header("Location: $_SERVER[PHP_SELF]");
 }
 //удаление пунктов
 if(isset($_REQUEST['haal1'])) {
     $kask = $yhendus->prepare("UPDATE laulud SET punktid=punktid-1 WHERE id=?");
     $kask->bind_param('s', $_REQUEST['haal1']);
     $kask->execute();
-//очистка адресной строки после перезагрузки
-    header("Location: $_SERVER[PHP_SELF]");
 }
 ?>
 
